@@ -3,7 +3,6 @@
 import { useState, useRef, useEffect, useCallback } from 'react'
 import { useRouter, useParams } from 'next/navigation'
 import SidebarLayout from '@/components/layout/sidebar-layout'
-import { analyzeRFP } from '@/lib/api'
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card'
 import { Button } from '@/components/ui/button'
 import {
@@ -143,29 +142,7 @@ export default function RFPInputPage() {
   const handleAnalyze = async () => {
     if (!canAnalyze) return
     setIsAnalyzing(true)
-<<<<<<< HEAD
-    try {
-      // Call OpenAI API to analyze RFP
-      const analysis = await analyzeRFP(rfpText)
-      console.log('RFP Analysis:', analysis)
-      
-      // TODO: Store analysis results in state/context for next steps
-      setHasAnalyzed(true)
-    } catch (error) {
-      console.error('Failed to analyze RFP:', error)
-      alert('Failed to analyze RFP. Please try again.')
-    } finally {
-      setIsAnalyzing(false)
-    }
-  }
-    // Mock analysis delay
-    await new Promise(resolve => setTimeout(resolve, 3000))
-    setIsAnalyzing(false)
-    setHasAnalyzed(true)
-  }
-=======
     setError(null)
->>>>>>> 09aba94f1aae1d5406f264cb1845bcddc3ff6e8c
 
     try {
       const body = new FormData()
