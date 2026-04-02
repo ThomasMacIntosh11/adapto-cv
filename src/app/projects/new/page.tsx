@@ -91,8 +91,20 @@ export default function NewProjectPage() {
               </li>
               
               <li className="relative pr-8">
+                <div className="absolute inset-0 flex items-center" aria-hidden="true">
+                  <div className="h-0.5 w-full bg-gray-200" />
+                </div>
                 <div className="relative flex h-8 w-8 items-center justify-center rounded-full bg-gray-200 text-gray-600">
                   <span className="text-sm font-semibold">4</span>
+                </div>
+                <div className="mt-2">
+                  <span className="text-sm text-gray-500">Comparison Score</span>
+                </div>
+              </li>
+              
+              <li className="relative pr-8">
+                <div className="relative flex h-8 w-8 items-center justify-center rounded-full bg-gray-200 text-gray-600">
+                  <span className="text-sm font-semibold">5</span>
                 </div>
                 <div className="mt-2">
                   <span className="text-sm text-gray-500">Generate CVs</span>

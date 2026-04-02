@@ -80,11 +80,11 @@ CERTIFICATIONS
         <div className="mb-8">
           <div className="flex items-center space-x-3 mb-4">
             <button
-              onClick={() => router.push(`/projects/${params.id}/upload-examples`)}
+              onClick={() => router.push(`/projects/${params.id}/comparison-score`)}
               className="flex items-center text-sm text-gray-500 hover:text-gray-700"
             >
               <ArrowLeft className="h-4 w-4 mr-1" />
-              Back to Examples
+              Back to Comparison Score
             </button>
           </div>
           <h1 className="text-2xl font-bold text-gray-900">Generate CV</h1>
@@ -132,8 +132,20 @@ CERTIFICATIONS
               </li>
               
               <li className="relative pr-8">
+                <div className="absolute inset-0 flex items-center" aria-hidden="true">
+                  <div className="h-0.5 w-full bg-green-200" />
+                </div>
+                <div className="relative flex h-8 w-8 items-center justify-center rounded-full bg-green-500 text-white">
+                  <CheckCircle className="h-5 w-5" />
+                </div>
+                <div className="mt-2">
+                  <span className="text-sm font-medium text-green-600">Comparison Score</span>
+                </div>
+              </li>
+              
+              <li className="relative pr-8">
                 <div className="relative flex h-8 w-8 items-center justify-center rounded-full bg-blue-600 text-white">
-                  <span className="text-sm font-semibold">4</span>
+                  <span className="text-sm font-semibold">5</span>
                 </div>
                 <div className="mt-2">
                   <span className="text-sm font-medium text-blue-600">Generate CVs</span>

@@ -110,7 +110,7 @@ export default function UploadExamplesPage() {
   }
 
   const handleContinue = () => {
-    router.push(`/projects/${params.id}/generate`)
+    router.push(`/projects/${params.id}/comparison-score`)
   }
 
   const canContinue = uploadedFiles.length >= 2 && uploadedFiles.every(file => file.status === 'complete')
@@ -174,8 +174,20 @@ export default function UploadExamplesPage() {
               </li>
               
               <li className="relative pr-8">
+                <div className="absolute inset-0 flex items-center" aria-hidden="true">
+                  <div className="h-0.5 w-full bg-gray-200" />
+                </div>
                 <div className="relative flex h-8 w-8 items-center justify-center rounded-full bg-gray-200 text-gray-600">
                   <span className="text-sm font-semibold">4</span>
+                </div>
+                <div className="mt-2">
+                  <span className="text-sm text-gray-500">Comparison Score</span>
+                </div>
+              </li>
+
+              <li className="relative pr-8">
+                <div className="relative flex h-8 w-8 items-center justify-center rounded-full bg-gray-200 text-gray-600">
+                  <span className="text-sm font-semibold">5</span>
                 </div>
                 <div className="mt-2">
                   <span className="text-sm text-gray-500">Generate CVs</span>
@@ -239,7 +251,7 @@ export default function UploadExamplesPage() {
               <div className="mt-6">
                 <Button onClick={handleContinue} className="w-full" size="lg">
                   <ArrowRight className="h-4 w-4 mr-2" />
-                  Continue to Generation
+                  Continue to Comparison Score
                 </Button>
               </div>
             )}
