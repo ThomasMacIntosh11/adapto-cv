@@ -9,22 +9,37 @@
     "lint": "next lint"
   },
   "dependencies": {
+<<<<<<< HEAD
     "class-variance-authority": "^0.7.1",
     "clsx": "^2.1.1",
     "lucide-react": "^0.460.0",
     "next": "15.2.2",
     "openai": "^6.33.0",
+=======
+    "autoprefixer": "^10.4.27",
+    "class-variance-authority": "^0.7.1",
+    "clsx": "^2.1.1",
+    "lucide-react": "^0.460.0",
+    "mammoth": "^1.12.0",
+    "next": "^15.5.14",
+    "pdf-parse": "^1.1.1",
+>>>>>>> 09aba94f1aae1d5406f264cb1845bcddc3ff6e8c
     "react": "^18",
     "react-dom": "^18",
     "tailwind-merge": "^2.5.4"
   },
   "devDependencies": {
     "@types/node": "^20",
+    "@types/pdf-parse": "^1.1.4",
     "@types/react": "^18",
     "@types/react-dom": "^18",
     "eslint": "^8",
     "eslint-config-next": "15.2.2",
+<<<<<<< HEAD
     "postcss": "^8",
+=======
+    "postcss": "^8.5.8",
+>>>>>>> 09aba94f1aae1d5406f264cb1845bcddc3ff6e8c
     "tailwindcss": "^3.4.1",
     "typescript": "^5"
   }
