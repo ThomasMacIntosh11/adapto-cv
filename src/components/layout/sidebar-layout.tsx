@@ -3,15 +3,16 @@
 import { useState } from 'react'
 import Link from 'next/link'
 import { useRouter, usePathname } from 'next/navigation'
-import { 
-  Plus, 
-  FileText, 
-  Settings, 
+import {
+  Plus,
+  FileText,
+  Settings,
   Menu,
   X,
   LogOut,
   User,
-  ChevronDown
+  ChevronDown,
+  FilePlus
 } from 'lucide-react'
 import { cn } from '@/lib/utils'
 
@@ -21,6 +22,7 @@ interface SidebarLayoutProps {
 
 const navigation = [
   { name: 'New Project', href: '/projects/new', icon: Plus },
+  { name: 'Add CV', href: '/cv-form', icon: FilePlus },
   { name: 'CV Library', href: '/library', icon: FileText },
   { name: 'Settings', href: '/settings', icon: Settings },
 ]
