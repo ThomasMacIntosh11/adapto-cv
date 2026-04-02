@@ -17,6 +17,11 @@ export default function RootLayout({
   return (
     <html lang="en" className="h-full">
       <body className={`${inter.className} h-full bg-gray-50`}>
+        <div className="bg-blue-600 text-white py-2">
+          <div className="text-center font-bold text-sm">
+            TEST FEATURE
+          </div>
+        </div>
         {children}
       </body>
     </html>
